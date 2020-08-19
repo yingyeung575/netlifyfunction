@@ -4,7 +4,7 @@ exports.handler = async (event, context) => {
     const subject = event.queryStringParameters.name || 'World'
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `${process.env.HI_KEY} Hello ${subject} ${process.env.HI_KEY} ${process.env.NODE_VERSION} dsdsd ${process.env.NODE_VERSION}` }),
+      body: JSON.stringify({ message: `${process.env.HI_KEY} Hello ${subject} ${process.env.HI_KEY}` }),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
