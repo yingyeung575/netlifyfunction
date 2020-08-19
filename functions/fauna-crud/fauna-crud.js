@@ -21,7 +21,7 @@ exports.handler = async (event, context) => {
       }
     case 'POST':
       // e.g. POST /.netlify/functions/fauna-crud with a body of key value pair objects, NOT strings
-      return require('./create').handler(event, context)
+      return require('./create-schema').handler(event, context)
     case 'PUT':
       // e.g. PUT /.netlify/functions/fauna-crud/123456 with a body of key value pair objects, NOT strings
       if (segments.length === 1) {
